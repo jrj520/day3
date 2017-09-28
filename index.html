@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+</head>
+<body>
+    <div class="box">
+        <section>
+            <ol class="olist" id="olist">
+                <li class="olis" style="color:blue">未使用</li>
+                <li class="olis">已使用</li>
+                <li class="olis">已过期</li>
+                <span class="line"></span>
+            </ol>
+            <div class="swiper-container contains">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide lis">123</li>
+                    <li class="swiper-slide lis">456</li>
+                    <li class="swiper-slide lis">789</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="js/swiper-3.3.1.min.js"></script>
+    <script>
+       document.documentElement.style.fontSize=document.documentElement.clientWidth/375*50+'px';
+    </script>
+    <script>
+        var myswiper = new Swiper('.swiper-container',{
+
+        })
+        var olis = document.getElementById('olist').getElementsByTagName('li');
+        var line = document.getElementsByClassName('line');
+        for(var i = 0;i < olis.length; i++) {
+            olis.onclick=function(){
+
+            }
+
+        }
+    </script>
+</body>
+</html>
